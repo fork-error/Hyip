@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.com">
+<div th:replace="fragments/headtags.html :: headtags"></div>
+<body>
+<div th:replace="~{fragments/header.html :: header}"></div>
+<!-- inner header wrapper start -->
+<div class="page_title_section dashboard_title">
+
+    <div class="page_header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-9 col-lg-7 col-md-7 col-12 col-sm-7">
+
+                    <h1>Email Notification </h1>
+                </div>
+                <div class="col-xl-3 col-lg-5 col-md-5 col-12 col-sm-5">
+                    <div class="sub_title_section">
+                        <ul class="sub_title">
+                            <li> <a href="#"> Home </a>&nbsp; / &nbsp; </li>
+                            <li>Email Notification</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- inner header wrapper end -->
+<div th:replace="~{fragments/dashboardSideBar.html :: dashboardSideBar}"></div>
+<!-- Main section Start -->
+<div class="l-main">
+    <!--  my account wrapper start -->
+    <div class="account_top_information">
+        <div class="account_overlay"></div>
+        <div class="useriimg"><img src="images/user.png" alt="users"></div>
+        <div class="userdet uderid">
+            <h3>Benmathew</h3>
+
+            <dl class="userdescc">
+                <dt>Registration Date</dt>
+                <dd>: &nbsp; Sep-10-2014 11:20:37</dd>
+                <dt>Last Login</dt>
+                <dd>: &nbsp; Jul-05-2019 07:06:36</dd>
+                <dt>Current Login</dt>
+                <dd>: &nbsp; Jul-06-2019 02:47:23</dd>
+                <dt>Last Access IP</dt>
+                <dd>: &nbsp; 27.57.18.1 </dd>
+                <dt>Current Access IP</dt>
+                <dd>: &nbsp; 122.175.131.51 </dd>
+
+            </dl>
+
+        </div>
+
+        <div class="userdet user_transcation">
+            <h3>Available Balance</h3>
+            <dl class="userdescc">
+                <dt>Paypal</dt>
+                <dd>:&nbsp;&nbsp;$ 392.79</dd>
+                <dt>Pexpay</dt>
+                <dd>:&nbsp;&nbsp;$ 498.61</dd>
+                <dt>PerfectMoney</dt>
+                <dd>:&nbsp;&nbsp;$ 60.18</dd>
+                <dt>Payza</dt>
+                <dd>:&nbsp;&nbsp;$ 435</dd>
+                <dt>HDMoney</dt>
+                <dd>:&nbsp;&nbsp;$ 0.08</dd>
+
+            </dl>
+        </div>
+        <div class="userdet user_transcation">
+            <h3 class="none_headung"> &nbsp;</h3>
+            <dl class="userdescc">
+                <dt>EGOpay</dt>
+                <dd>:&nbsp;&nbsp;$ 0</dd>
+                <dt>OKpay</dt>
+                <dd>:&nbsp;&nbsp;$ 0</dd>
+                <dt>Solidtrustpay </dt>
+                <dd>:&nbsp;&nbsp;$ 0</dd>
+                <dt>Webmoney</dt>
+                <dd>:&nbsp;&nbsp;$ 450</dd>
+                <dt>Bankwire</dt>
+                <dd>:&nbsp;&nbsp;$ 799</dd>
+                <dt>Bitcoin</dt>
+                <dd>:&nbsp;&nbsp;$ 33584</dd>
+
+            </dl>
+
+        </div>
+
+    </div>
+    <!--  my account wrapper end -->
+    <!--  email wrapper start -->
+    <div class="email_notifcation_wrapper float_left">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-12">
+                <div class="sv_heading_wraper">
+
+                    <h3>email notification</h3>
+
+                </div>
+            </div>
+        </div>
+        <div class="email_notify_top float_left">
+            <div class="row">
+
+                <div class="col-xl-3 col-md-6 col-lg-4 col-sm-12 col-12">
+                    <div class="email_notify float_left">
+                        <ul class="job_field">
+                            <li>
+                                <input type="checkbox" id="c1" name="cb">
+                                <label for="c1"> Deposit Confirmation</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c2" name="cb">
+                                <label for="c2"> Deposit Request</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c3" name="cb">
+                                <label for="c3">Change Password</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c4" name="cb">
+                                <label for="c4">Support tickets</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c5" name="cb">
+                                <label for="c5">Fund Transfer Credit</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-lg-4 col-sm-12 col-12">
+                    <div class="email_notify float_left">
+                        <ul class="job_field">
+                            <li>
+                                <input type="checkbox" id="c6" name="cb">
+                                <label for="c6"> Payout Confirmation</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c7" name="cb">
+                                <label for="c7"> Exchange Confirmation</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c8" name="cb">
+                                <label for="c8">New referral</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c9" name="cb">
+                                <label for="c9"> Profile Update</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c10" name="cb">
+                                <label for="c10">Email Login Verification</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4 col-sm-12 col-12">
+                    <div class="email_notify float_left">
+                        <ul class="job_field">
+                            <li>
+                                <input type="checkbox" id="c11" name="cb">
+                                <label for="c11">Payout Request</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c12" name="cb">
+                                <label for="c12">change Pin</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c13" name="cb">
+                                <label for="c13">Referral Commission Earned</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c14" name="cb">
+                                <label for="c14">Fund Transfer Debit</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="c15" name="cb">
+                                <label for="c15">Email IP Verification</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-12 col-md-12 col-lg-12 col-sm-12 col-12">
+                    <div class="about_btn account_data_btn float_left">
+                        <ul>
+                            <li>
+                                <a href="#">change account data</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  email wrapper end -->
+</div>
+<div th:replace="~{fragments/footer2.html :: footer2}"></div>
+</body>
+
+</html>

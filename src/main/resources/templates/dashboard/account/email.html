@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"
       xmlns:th="http://www.thymeleaf.com">
-<div th:replace="fragments/headtags.html :: headtags"></div>
+<head th:replace="fragments/headtags.html :: headtags"></head>
 <body>
 <div th:replace="~{fragments/header.html :: header}"></div>
 <!-- inner header wrapper start -->
@@ -32,65 +32,7 @@
 <!-- Main section Start -->
 <div class="l-main">
     <!--  my account wrapper start -->
-    <div class="account_top_information">
-        <div class="account_overlay"></div>
-        <div class="useriimg"><img src="images/user.png" alt="users"></div>
-        <div class="userdet uderid">
-            <h3>Benmathew</h3>
-
-            <dl class="userdescc">
-                <dt>Registration Date</dt>
-                <dd>: &nbsp; Sep-10-2014 11:20:37</dd>
-                <dt>Last Login</dt>
-                <dd>: &nbsp; Jul-05-2019 07:06:36</dd>
-                <dt>Current Login</dt>
-                <dd>: &nbsp; Jul-06-2019 02:47:23</dd>
-                <dt>Last Access IP</dt>
-                <dd>: &nbsp; 27.57.18.1 </dd>
-                <dt>Current Access IP</dt>
-                <dd>: &nbsp; 122.175.131.51 </dd>
-
-            </dl>
-
-        </div>
-
-        <div class="userdet user_transcation">
-            <h3>Available Balance</h3>
-            <dl class="userdescc">
-                <dt>Paypal</dt>
-                <dd>:&nbsp;&nbsp;$ 392.79</dd>
-                <dt>Pexpay</dt>
-                <dd>:&nbsp;&nbsp;$ 498.61</dd>
-                <dt>PerfectMoney</dt>
-                <dd>:&nbsp;&nbsp;$ 60.18</dd>
-                <dt>Payza</dt>
-                <dd>:&nbsp;&nbsp;$ 435</dd>
-                <dt>HDMoney</dt>
-                <dd>:&nbsp;&nbsp;$ 0.08</dd>
-
-            </dl>
-        </div>
-        <div class="userdet user_transcation">
-            <h3 class="none_headung"> &nbsp;</h3>
-            <dl class="userdescc">
-                <dt>EGOpay</dt>
-                <dd>:&nbsp;&nbsp;$ 0</dd>
-                <dt>OKpay</dt>
-                <dd>:&nbsp;&nbsp;$ 0</dd>
-                <dt>Solidtrustpay </dt>
-                <dd>:&nbsp;&nbsp;$ 0</dd>
-                <dt>Webmoney</dt>
-                <dd>:&nbsp;&nbsp;$ 450</dd>
-                <dt>Bankwire</dt>
-                <dd>:&nbsp;&nbsp;$ 799</dd>
-                <dt>Bitcoin</dt>
-                <dd>:&nbsp;&nbsp;$ 33584</dd>
-
-            </dl>
-
-        </div>
-
-    </div>
+    <div th:replace="~{fragments/dashboard_account_info.html :: dashboardAccountInfo}"></div>
     <!--  my account wrapper end -->
     <!--  email wrapper start -->
     <div class="email_notifcation_wrapper float_left">

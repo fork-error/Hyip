@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.com">
+<head th:replace="fragments/headtags.html :: headtags"></head>
+<body>
+<div th:replace="~{fragments/header.html :: header}"></div>
+<!-- inner header wrapper start -->
+<div class="page_title_section dashboard_title">
+
+    <div class="page_header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-9 col-lg-7 col-md-7 col-12 col-sm-7">
+
+                    <h1>Change Pin Number</h1>
+                </div>
+                <div class="col-xl-3 col-lg-5 col-md-5 col-12 col-sm-5">
+                    <div class="sub_title_section">
+                        <ul class="sub_title">
+                            <li> <a href="#"> Home </a>&nbsp; / &nbsp; </li>
+                            <li>Change Pin</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- inner header wrapper end -->
+<div th:replace="~{fragments/dashboardSideBar.html :: dashboardSideBar}"></div>
+<!-- Main section Start -->
+<div class="l-main">
+    <!--  my account wrapper start -->
+    <div th:replace="~{fragments/dashboard_account_info.html :: dashboardAccountInfo}"></div>
+    <!--  my account wrapper end -->
+    <div class="password_notify_wrapper float_left">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-12">
+                <div class="sv_heading_wraper heading_center">
+
+                    <h3>Change pin number</h3>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-sm-12 col-12">
+                <div class="change_password_wrapper float_left">
+                    <div class="change_pass_field float_left">
+                        <div class="change_field">
+                            <label>Current   pin number :</label>
+                            <input type="password" name="password" placeholder="**********">
+                        </div>
+                        <div class="change_field">
+                            <label>new   pin number :</label>
+                            <input type="password" name="password" placeholder="**********">
+                        </div>
+                        <div class="change_field">
+                            <label>confirm  pin number :</label>
+                            <input type="password" name="password" placeholder="**********">
+                        </div>
+                        <div class="about_btn float_left">
+                            <ul>
+                                <li>
+                                    <a href="#">submit</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:replace="~{fragments/footer2.html :: footer2}"></div>
+</body>
+
+</html>

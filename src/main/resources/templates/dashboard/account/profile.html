@@ -5,19 +5,20 @@
 <body>
 <div th:replace="~{fragments/header.html :: header}"></div>
 <div class="page_title_section dashboard_title">
+
     <div class="page_header">
         <div class="container">
             <div class="row">
 
                 <div class="col-xl-9 col-lg-7 col-md-7 col-12 col-sm-7">
 
-                    <h1>View Profile</h1>
+                    <h1>My Account </h1>
                 </div>
                 <div class="col-xl-3 col-lg-5 col-md-5 col-12 col-sm-5">
                     <div class="sub_title_section">
                         <ul class="sub_title">
                             <li> <a href="#"> Home </a>&nbsp; / &nbsp; </li>
-                            <li>View Profile</li>
+                            <li>My Account</li>
                         </ul>
                     </div>
                 </div>
@@ -26,67 +27,10 @@
     </div>
 </div>
 <div th:replace="~{fragments/dashboardSideBar.html :: dashboardSideBar}"></div>
+
 <div class="l-main">
     <!--  my account wrapper start -->
-    <div class="account_top_information">
-        <div class="account_overlay"></div>
-        <div class="useriimg"><img src="images/user.png" alt="users"></div>
-        <div class="userdet uderid">
-            <h3>Benmathew</h3>
-
-            <dl class="userdescc">
-                <dt>Registration Date</dt>
-                <dd>: &nbsp; Sep-10-2014 11:20:37</dd>
-                <dt>Last Login</dt>
-                <dd>: &nbsp; Jul-05-2019 07:06:36</dd>
-                <dt>Current Login</dt>
-                <dd>: &nbsp; Jul-06-2019 02:47:23</dd>
-                <dt>Last Access IP</dt>
-                <dd>: &nbsp; 27.57.18.1 </dd>
-                <dt>Current Access IP</dt>
-                <dd>: &nbsp; 122.175.131.51 </dd>
-
-            </dl>
-
-        </div>
-
-        <div class="userdet user_transcation">
-            <h3>Available Balance</h3>
-            <dl class="userdescc">
-                <dt>Paypal</dt>
-                <dd>:&nbsp;&nbsp;$ 392.79</dd>
-                <dt>Pexpay</dt>
-                <dd>:&nbsp;&nbsp;$ 498.61</dd>
-                <dt>PerfectMoney</dt>
-                <dd>:&nbsp;&nbsp;$ 60.18</dd>
-                <dt>Payza</dt>
-                <dd>:&nbsp;&nbsp;$ 435</dd>
-                <dt>HDMoney</dt>
-                <dd>:&nbsp;&nbsp;$ 0.08</dd>
-
-            </dl>
-        </div>
-        <div class="userdet user_transcation">
-            <h3 class="none_headung"> &nbsp;</h3>
-            <dl class="userdescc">
-                <dt>EGOpay</dt>
-                <dd>:&nbsp;&nbsp;$ 0</dd>
-                <dt>OKpay</dt>
-                <dd>:&nbsp;&nbsp;$ 0</dd>
-                <dt>Solidtrustpay </dt>
-                <dd>:&nbsp;&nbsp;$ 0</dd>
-                <dt>Webmoney</dt>
-                <dd>:&nbsp;&nbsp;$ 450</dd>
-                <dt>Bankwire</dt>
-                <dd>:&nbsp;&nbsp;$ 799</dd>
-                <dt>Bitcoin</dt>
-                <dd>:&nbsp;&nbsp;$ 33584</dd>
-
-            </dl>
-
-        </div>
-
-    </div>
+    <div th:replace="~{fragments/dashboard_account_info.html :: dashboardAccountInfo}"></div>
     <!--  my account wrapper end -->
     <!--  profile wrapper start -->
     <div class="view_profile_wrapper_top float_left">
@@ -222,6 +166,19 @@
         </div>
     </div>
     <!--  profile wrapper end -->
+    <!--  footer  wrapper start -->
+    <div class="copy_footer_wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="crm_left_footer_cont">
+                        <p>2019 Copyright © <a href="#"> savehyip </a> . All Rights Reserved.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
 <div th:replace="~{fragments/footer2.html :: footer2}"></div>
 </body>

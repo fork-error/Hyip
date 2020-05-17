@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.com">
+<head th:replace="fragments/headtags.html :: headtags"></head>
+<body>
+<div th:replace="~{fragments/header.html :: header}"></div>
+<!-- inner header wrapper start -->
+<div class="page_title_section dashboard_title">
+
+    <div class="page_header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-9 col-lg-7 col-md-7 col-12 col-sm-7">
+
+                    <h1>Make Payout </h1>
+                </div>
+                <div class="col-xl-3 col-lg-5 col-md-5 col-12 col-sm-5">
+                    <div class="sub_title_section">
+                        <ul class="sub_title">
+                            <li> <a href="#"> Home </a>&nbsp; / &nbsp; </li>
+                            <li>Make Payout</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- inner header wrapper end -->
+<div th:replace="~{fragments/dashboardSideBar.html :: dashboardSideBar}"></div>
+<!-- Main section Start -->
+<div class="l-main">
+    <!--  my account wrapper start -->
+    <div th:replace="~{fragments/dashboard_account_info.html :: dashboardAccountInfo}"></div>
+    <!--  my account wrapper end -->
+    <div class="payment_transfer_Wrapper float_left">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-12">
+                <div class="sv_heading_wraper heading_center">
+                    <h3>Make Payout</h3>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-sm-12 col-12">
+                <div class="change_password_wrapper float_left">
+                    <div class="change_pass_field float_left">
+                        <div class="payment_gateway_wrapper payment_select_wrapper">
+                            <label>Select Payment Mode :</label>
+                            <select>
+                                <option selected>choose gateway</option>
+                                <option value="1">paypal</option>
+                                <option value="2">pexpay</option>
+                                <option value="3">perfectMoney</option>
+                                <option value="4">perfectMoney</option>
+                                <option value="5">payza</option>
+                                <option value="6">HDMoney</option>
+                                <option value="7">EGOpay</option>
+                                <option value="8">OKpay</option>
+                                <option value="9">solid trust pay</option>
+                                <option value="10">webmoney</option>
+                                <option value="11">bankwire</option>
+                                <option value="12">bitcoin</option>
+                            </select>
+                        </div>
+                        <div class="change_field">
+                            <label>available balance :</label>
+                            <input type="password" name="password" placeholder="000 USD">
+                        </div>
+                        <div class="change_field">
+                            <label>Account ID :</label>
+                            <input type="password" name="password" placeholder="BANK OF PAMHYIP">
+                        </div>
+                        <div class="change_field">
+                            <label>amount :</label>
+                            <input type="password" name="password" placeholder="000 USD">
+                        </div>
+                        <div class="about_btn float_left">
+                            <ul>
+                                <li>
+                                    <a href="#">transfer</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:replace="~{fragments/footer2.html :: footer2}"></div>
+</body>
+
+</html>

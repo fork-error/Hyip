@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.com">
+<head th:replace="fragments/headtags.html :: headtags"></head>
+<body>
+<div th:replace="~{fragments/header.html :: header}"></div>
+<!-- inner header wrapper start -->
+<div class="page_title_section dashboard_title">
+
+    <div class="page_header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-9 col-lg-7 col-md-7 col-12 col-sm-7">
+
+                    <h1>Make Desposit</h1>
+                </div>
+                <div class="col-xl-3 col-lg-5 col-md-5 col-12 col-sm-5">
+                    <div class="sub_title_section">
+                        <ul class="sub_title">
+                            <li><a href="#"> Home </a>&nbsp; / &nbsp;</li>
+                            <li> Make Desposit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- inner header wrapper end -->
+<div th:replace="~{fragments/dashboardSideBar.html :: dashboardSideBar}"></div>
+<!-- Main section Start -->
+<div class="l-main">
+    <!--  my account wrapper start -->
+    <div th:replace="~{fragments/dashboard_account_info.html :: dashboardAccountInfo}"></div>
+    <!--  my account wrapper end -->
+    <!--  profile wrapper start -->
+    <div class="plan_investment_wrapper float_left">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-12">
+                <div class="sv_heading_wraper">
+
+                    <h3>plan details</h3>
+
+                </div>
+
+            </div>
+            <div class="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
+                <div class="investment_box_wrapper sv_pricing_border float_left">
+                    <div class="investment_icon_circle">
+                        <i class="flaticon-movie-tickets"></i>
+                    </div>
+                    <div class="investment_border_wrapper"></div>
+                    <div class="investment_content_wrapper">
+                        <h1><a href="#">gold plan</a></h1>
+                        <p>Min Amount: $500.00
+                            <br>Max Amount : $5000.00
+
+                            <br> Up to 3% Hourly for 10 Hourly
+                            <br> Principal Return
+                            <br> Compound Available</p>
+                    </div>
+                    <div class="about_btn plans_btn">
+                        <ul>
+                            <li>
+                                <a href="#">choose plan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
+                <div class="investment_box_wrapper sv_pricing_border float_left">
+                    <div class="investment_icon_circle red_info_circle">
+                        <i class="flaticon-invoice"></i>
+                    </div>
+                    <div class="investment_border_wrapper red_border_wrapper"></div>
+                    <div class="investment_content_wrapper red_content_wrapper">
+                        <h1><a href="#">copper Plan</a></h1>
+                        <p>Up to 5% Daily for 5 Days
+                            <br> Min deposit: $2020
+                            <br> Max deposit: $101010
+                            <br> Principal not Return
+                            <br> Compound not Available</p>
+                    </div>
+                    <div class="about_btn plans_btn red_btn_plans">
+                        <ul>
+                            <li>
+                                <a href="#">choose plan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
+                <div class="investment_box_wrapper sv_pricing_border float_left">
+                    <div class="investment_icon_circle blue_icon_circle">
+                        <i class="flaticon-progress-report"></i>
+                    </div>
+                    <div class="investment_border_wrapper blue_border_wrapper"></div>
+                    <div class="investment_content_wrapper blue_content_wrapper">
+                        <h1><a href="#">bronze plan</a></h1>
+                        <p>Up to 3% Hourly for 10 Hourly
+                            <br> Min deposit: $300
+                            <br> Max deposit: $3000
+                            <br> Principal Return
+                            <br> Compound Available</p>
+                    </div>
+                    <div class="about_btn plans_btn blue_btn_plans">
+                        <ul>
+                            <li>
+                                <a href="#">choose plan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
+                <div class="investment_box_wrapper sv_pricing_border float_left">
+                    <div class="investment_icon_circle green_info_circle">
+                        <i class="flaticon-file"></i>
+                    </div>
+                    <div class="investment_border_wrapper green_border_wrapper"></div>
+                    <div class="investment_content_wrapper green_content_wrapper">
+                        <h1><a href="#">silver plan</a></h1>
+                        <p>Up to 5% for 30 days
+                            <br> Min deposit: $500
+                            <br> Max deposit: $3000
+                            <br> Principal Return
+                            <br> Compound Available</p>
+                    </div>
+                    <div class="about_btn plans_btn green_plan_btn">
+                        <ul>
+                            <li>
+                                <a href="#">choose plan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--  profile wrapper end -->
+    <!--  payment mode wrapper start -->
+    <div class="payment_mode_wrapper float_left">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-12">
+                <div class="sv_heading_wraper">
+
+                    <h3>choose payment mode</h3>
+
+                </div>
+
+            </div>
+            <div class="col-md-12 col-lg-12 col-sm-12 col-12">
+                <div class="payment_radio_btn_wrapper float_left">
+                    <div class="radio">
+                        <input type="radio" name="ratio" id="poa" value="option1" checked="">
+                        <label for="poa"><img src="images/partner1.png" alt="img"></label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="ratio" id="job" value="option1">
+                        <label for="job"><img src="images/partner4.png" alt="img"></label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="ratio" id="pay1" value="option1">
+                        <label for="pay1"><img src="images/partner2.png" alt="img"></label>
+                    </div>
+                    <div class="about_btn acc_balance_btn float_left">
+                        <p>YOUR ACCOUNT BALANCE :</p>
+                        <ul>
+                            <li>
+                                <a href="#">$ 498.61</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about_btn float_left">
+
+                        <ul>
+                            <li>
+                                <a href="#">submit</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  payment mode wrapper end -->
+</div>
+<div th:replace="~{fragments/footer2.html :: footer2}"></div>
+</body>
+
+</html>

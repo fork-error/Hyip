@@ -4,7 +4,7 @@
 <div th:fragment="header">
 <div id="preloader">
     <div id="status">
-        <img th:src="@{images/loader.gif}" id="preloader_image" alt="loader">
+        <img th:src="@{/images/loader.gif}" id="preloader_image" alt="loader">
     </div>
 </div>
 <div class="cursor"></div>
@@ -13,7 +13,7 @@
 <!-- Top Scroll End -->
 <!-- cp navi wrapper Start -->
 <nav class="cd-dropdown d-block d-sm-block d-md-block d-lg-none d-xl-none">
-    <h2><a href=""> savehyip </a></h2>
+    <h2><a href="/"> savehyip </a></h2>
     <a href="#0" class="cd-close">Close</a>
     <ul class="cd-dropdown-content">
         <li>
@@ -39,34 +39,34 @@
                     <a href="banners.html">banners</a>
                 </li>
                 <li>
-                    <a href="change_password.html">change password</a>
+                    <a href="/dashboard/account/password">change password</a>
                 </li>
                 <li>
-                    <a href="change_pin.html">change pin</a>
+                    <a href="/dashboard/account/pin">change pin</a>
                 </li>
                 <li>
                     <a href="deposit_history.html">deposit history</a>
                 </li>
                 <li>
-                    <a href="deposit_list.html">deposit list</a>
+                    <a href="/dashboard/finance/lists">deposit list</a>
                 </li>
                 <li>
                     <a href="earnings_history.html">earnings history</a>
                 </li>
                 <li>
-                    <a href="email_notification.html">email notification</a>
+                    <a href="/dashboard/account/email">email notification</a>
                 </li>
                 <li>
                     <a href="exchange_history.html">exchange history</a>
                 </li>
                 <li>
-                    <a href="exchange_money.html">exchange money</a>
+                    <a href="/dashboard/finance/exchange">exchange money</a>
                 </li>
                 <li>
-                    <a href="make_deposit.html">make deposit</a>
+                    <a href="/dashboard/finance/deposit">make deposit</a>
                 </li>
                 <li>
-                    <a href="my_account.html">my account</a>
+                    <a href="/dashboard">my account</a>
                 </li>
                 <li>
                     <a href="payment_request.html">payment request</a>
@@ -87,7 +87,7 @@
                     <a href="transfer_fund.html">transfer fund</a>
                 </li>
                 <li>
-                    <a href="view_profile.html">view profile</a>
+                    <a href="/dashboard/account/profile">view profile</a>
                 </li>
             </ul>
         </li>
@@ -105,7 +105,7 @@
     <div class="container-fluid">
         <div class="cp_logo_wrapper">
             <a href="/">
-                <img th:src="@{images/logo2.png}" alt="logo">
+                <img th:src="@{/images/logo2.png}" alt="logo">
             </a>
         </div>
         <!-- mobile menu area start -->
@@ -162,9 +162,9 @@
                     <li class="has-mega gc_main_navigation"><a href="/" class="gc_main_navigation active_class">Home <i class="fas"></i></a>
 
                     </li>
-                    <li><a href="about" class="gc_main_navigation">About Us</a></li>
-                    <li><a href="investment" class="gc_main_navigation">Investment plans</a></li>
-                    <li class="has-mega gc_main_navigation"><a href="faq">FAQ</a>
+                    <li><a href="/about" class="gc_main_navigation">About Us</a></li>
+                    <li><a href="/investment" class="gc_main_navigation">Investment plans</a></li>
+                    <li/><a href="/faq">FAQ</a>
 
                     </li>
                     <li class="has-mega gc_main_navigation"><a href="/dashboard" class="gc_main_navigation">dashboard <i class="fas fa-caret-down"></i></a>
@@ -178,16 +178,16 @@
                                         <a href="/dashboard"> <i class="fas fa-caret-right"></i>my account  </a>
                                     </li>
                                     <li>
-                                        <a href="view_profile.html"> <i class="fas fa-caret-right"></i> my profile</a>
+                                        <a href="/dashboard/account/profile"> <i class="fas fa-caret-right"></i> my profile</a>
                                     </li>
                                     <li>
-                                        <a href="email_notification.html"><i class="fas fa-caret-right"></i>email notification </a>
+                                        <a href="/dashboard/account/email"><i class="fas fa-caret-right"></i>email notification </a>
                                     </li>
                                     <li>
-                                        <a href="change_password.html"><i class="fas fa-caret-right"></i>change password</a>
+                                        <a href="/dashboard/account/password"><i class="fas fa-caret-right"></i>change password</a>
                                     </li>
                                     <li>
-                                        <a href="change_pin.html"><i class="fas fa-caret-right"></i>change pin</a>
+                                        <a href="/dashboard/account/pin"><i class="fas fa-caret-right"></i>change pin</a>
                                     </li>
 
                                 </ul>
@@ -197,19 +197,19 @@
 									</span></a>
                                 <ul class="dropdown-menu-right">
                                     <li>
-                                        <a href="make_deposit.html"> <i class="fas fa-caret-right"></i>make deposit</a>
+                                        <a href="/dashboard/finance/deposit"> <i class="fas fa-caret-right"></i>make deposit</a>
                                     </li>
                                     <li>
-                                        <a href="deposit_list.html"> <i class="fas fa-caret-right"></i> deposit lists</a>
+                                        <a href="/dashboard/finance/lists"> <i class="fas fa-caret-right"></i> deposit lists</a>
                                     </li>
                                     <li>
-                                        <a href="payment_request.html"><i class="fas fa-caret-right"></i>payment request</a>
+                                        <a href="/dashboard/finance/requests"><i class="fas fa-caret-right"></i>payment request</a>
                                     </li>
                                     <li>
-                                        <a href="exchange_money.html"><i class="fas fa-caret-right"></i>exchange money</a>
+                                        <a href="/dashboard/finance/exchange"><i class="fas fa-caret-right"></i>exchange money</a>
                                     </li>
                                     <li>
-                                        <a href="transfer_fund.html"><i class="fas fa-caret-right"></i>fund transfer</a>
+                                        <a href="/dashboard/transfer"><i class="fas fa-caret-right"></i>fund transfer</a>
                                     </li>
 
                                 </ul>

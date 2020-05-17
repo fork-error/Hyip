@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.com">
+<head th:replace="fragments/headtags.html :: headtags"></head>
+<body>
+<div th:replace="~{fragments/header.html :: header}"></div>
+<!-- inner header wrapper start -->
+<div class="page_title_section dashboard_title">
+
+    <div class="page_header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-9 col-lg-7 col-md-7 col-12 col-sm-7">
+
+                    <h1>Banner</h1>
+                </div>
+                <div class="col-xl-3 col-lg-5 col-md-5 col-12 col-sm-5">
+                    <div class="sub_title_section">
+                        <ul class="sub_title">
+                            <li> <a href="#"> Home </a>&nbsp; / &nbsp; </li>
+                            <li>Banner</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- inner header wrapper end -->
+<div th:replace="~{fragments/dashboardSideBar.html :: dashboardSideBar}"></div>
+<!-- Main section Start -->
+<div class="l-main">
+    <!--  my account wrapper start -->
+    <div th:replace="~{fragments/dashboard_account_info.html :: dashboardAccountInfo}"></div>
+    <!--  my account wrapper end -->
+    <div class="banner_top_wrapper float_left">
+
+        <div class="row">
+
+            <div class="col-md-12 col-lg-12 col-sm-12 col-12">
+                <div class="sv_heading_wraper">
+
+                    <h3>banners</h3>
+
+                </div>
+
+            </div>
+            <div class="col-md-12 col-lg-12 col-sm-12 col-12">
+                <div class="view_profile_wrapper float_left">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-12">
+                            <div class="profile_view_img banner_img_wrapper">
+                                <img src="images/banner1.jpg" alt="post_img">
+
+                            </div>
+                            <div class="profile_width_cntnt banner_cnctnt_wrapper">
+                                <h4>JPEG or PNG 1000x1000px Thumbnail</h4>
+
+                                <div class="width_50">
+                                    <input type="file" id="input-file-now-custom-23" class="dropify" data-height="90" /><span class="post_photo">browse image</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-12">
+                            <div class="profile_view_img banner_img_wrapper gtgt">
+                                <img src="images/banner1.jpg" alt="post_img">
+
+                            </div>
+                            <div class="profile_width_cntnt banner_cnctnt_wrapper">
+                                <h4>JPEG or PNG 1000x1000px Thumbnail</h4>
+
+                                <div class="width_50">
+                                    <input type="file" id="input-file-now-custom-3" class="dropify" data-height="90" /><span class="post_photo">browse image</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div th:replace="~{fragments/footer2.html :: footer2}"></div>
+</body>
+
+</html>

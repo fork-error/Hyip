@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
+    private static final String DOCTITLE = "docTitle";
+
     @GetMapping("/")
     public String getHomePage(Model model){
         String docTitle = "Welcome to Hyip";
@@ -48,5 +50,11 @@ public class HomeController {
     public String blog(Model model){
         model.addAttribute("docTitle","Blog");
         return "blog/index";
+    }
+
+    @GetMapping("dashboard/tickets")
+    public String getTickets(Model model){
+        model.addAttribute(DOCTITLE,"View Tickets");
+        return "dashboard/ticket";
     }
 }

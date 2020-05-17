@@ -9,33 +9,35 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("dashboard/finance")
 public class DashboardFinanceController {
 
+    private static final String DOCTITLE = "docTitle";
+
     @GetMapping("")
     public String getFinance(Model model){
-        model.addAttribute("docTitle","Make Deposit");
+        model.addAttribute(DOCTITLE,"Make Deposit");
         return "dashboard/finance/make_deposit";
     }
 
     @GetMapping("/deposit")
     public String makeDeposit(Model model){
-        model.addAttribute("docTitle","Make Deposit");
+        model.addAttribute(DOCTITLE,"Make Deposit");
         return "dashboard/finance/make_deposit";
     }
 
     @GetMapping("/lists")
     public String getDepositList(Model model){
-        model.addAttribute("docTitle","Deposit Lists");
+        model.addAttribute(DOCTITLE,"Deposit Lists");
         return "dashboard/finance/deposit_list";
     }
 
     @GetMapping("/requests")
     public String getPaymentRequests(Model model){
-        model.addAttribute("docTitle","Payment Requests");
+        model.addAttribute(DOCTITLE,"Payment Requests");
         return "dashboard/finance/payment_requests";
     }
 
     @GetMapping("/exchange")
     public String getMoneyExchange(Model model){
-        model.addAttribute("docTitle","Exchange Money");
+        model.addAttribute(DOCTITLE,"Exchange Money");
         return "dashboard/finance/exchange_money";
     }
 }

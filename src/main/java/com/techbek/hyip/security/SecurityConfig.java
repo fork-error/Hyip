@@ -46,8 +46,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .httpBasic().disable()
                 .formLogin().loginPage("/login")
                 .and()
-                .authorizeRequests()
-                .antMatchers("/dashboard").permitAll();
+                .authorizeRequests();
 
         ;
     }
@@ -55,6 +54,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring().antMatchers("/", "/webjars/**", "/error**", "/css/**", "/js/**", "/fonts/**",
-                "/img/**", "/webfonts/**", "/images/**","/about","/investment","/faq","/blog","/contact","/login","/error","/dashboard/**","/account/**");
+                "/img/**", "/webfonts/**", "/images/**","/about","/investment","/faq","/blog","/contact","/login","/error");
     }
 }

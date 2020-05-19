@@ -76,7 +76,7 @@
 
 		/**
 		 * Coordinates of all items in pixel.
-		 * @todo The name of this member is missleading.
+		 * @todo The personalDetails of this member is missleading.
 		 * @protected
 		 */
 		this._coordinates = [];
@@ -1129,7 +1129,7 @@
 
 	/**
 	 * Gets the coordinate of an item.
-	 * @todo The name of this method is missleanding.
+	 * @todo The personalDetails of this method is missleanding.
 	 * @public
 	 * @param {Number} position - The absolute position of the item within `minimum()` and `maximum()`.
 	 * @returns {Number|Array.<Number>} - The coordinate of the item in pixel or all coordinates.
@@ -1452,7 +1452,7 @@
 	 * Attaches to an internal event.
 	 * @protected
 	 * @param {HTMLElement} element - The event source.
-	 * @param {String} event - The event name.
+	 * @param {String} event - The event personalDetails.
 	 * @param {Function} listener - The event handler to attach.
 	 * @param {Boolean} capture - Wether the event should be handled at the capturing phase or not.
 	 */
@@ -1468,7 +1468,7 @@
 	 * Detaches from an internal event.
 	 * @protected
 	 * @param {HTMLElement} element - The event source.
-	 * @param {String} event - The event name.
+	 * @param {String} event - The event personalDetails.
 	 * @param {Function} listener - The attached event handler to detach.
 	 * @param {Boolean} capture - Wether the attached event handler was registered as a capturing listener or not.
 	 */
@@ -1484,7 +1484,7 @@
 	 * Triggers a public event.
 	 * @todo Remove `status`, `relatedTarget` should be used instead.
 	 * @protected
-	 * @param {String} name - The event name.
+	 * @param {String} name - The event personalDetails.
 	 * @param {*} [data=null] - The event data.
 	 * @param {String} [namespace=carousel] - The event namespace.
 	 * @param {String} [state] - The state which is associated with the event.
@@ -1522,7 +1522,7 @@
 
 	/**
 	 * Enters a state.
-	 * @param name - The state name.
+	 * @param name - The state personalDetails.
 	 */
 	Owl.prototype.enter = function(name) {
 		$.each([ name ].concat(this._states.tags[name] || []), $.proxy(function(i, name) {
@@ -1536,7 +1536,7 @@
 
 	/**
 	 * Leaves a state.
-	 * @param name - The state name.
+	 * @param name - The state personalDetails.
 	 */
 	Owl.prototype.leave = function(name) {
 		$.each([ name ].concat(this._states.tags[name] || []), $.proxy(function(i, name) {

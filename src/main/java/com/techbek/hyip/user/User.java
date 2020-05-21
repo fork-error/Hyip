@@ -15,7 +15,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long Id;
 
-    @UniqueUsername
+    @NotEmpty
     private String username;
 
     @NotEmpty
@@ -24,8 +24,9 @@ public class User {
     @NotEmpty
     private String email;
 
+    private String referral;
 
-    @OneToOne(cascade = CascadeType.REMOVE)
+    @OneToOne(cascade = CascadeType.REMOVE, mappedBy = "user")
     private PersonalDetails personalDetails;
 
     private String pin;

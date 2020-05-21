@@ -13,6 +13,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.authentication.AuthenticationManagerFactoryBean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 @EnableWebSecurity
@@ -44,16 +45,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .httpBasic().disable()
-                .formLogin().loginPage("/login")
+                .authorizeRequests().anyRequest().authenticated()
                 .and()
-                .authorizeRequests();
+                .formLogin()
+                .loginPage("/login")
+                .and()
+                .logout()
+                .invalidateHttpSession(true)
+                .clearAuthentication(true)
+                .logoutSuccessUrl("/login?logout")
+                .permitAll();
 
-        ;
     }
 
     @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring().antMatchers("/", "/webjars/**", "/error**", "/css/**", "/js/**", "/fonts/**",
-                "/img/**", "/webfonts/**", "/images/**","/about","/investment","/faq","/blog","/contact","/login","/error");
+                "/img/**", "/webfonts/**", "/images/**","/about","/investment","/faq","/blog","/contact","/login","/error","/register");
     }
 }
